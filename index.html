@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Web Page
+        </title>
+    </head>
+    <style>
+        img{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            margin:10px 0;
+            border:5px solid white;
+            animation:zoom 3s;
+        }
+        @keyframes zoom{
+            from{
+                transform:scale(0.5);
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin:15px;
+            font-weight: bold;
+            transition:0.3s;
+        }
+        nav a:hover{
+            color:yellowgreen;
+        }
+        header{
+            background-color:rgb(127, 177, 235);
+            color: white;
+            text-align: center;
+        }
+        section{
+            width:80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow:0 0 10px
+            rgba(143, 41, 41, 0.1);
+        }
+        h2{
+            color: #0077b6;
+            margin-bottom: 15px;
+            animation: fade 2s;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table,th,td{
+            border: 2px solid #2b8ab6cc;
+        }
+        th,td{
+            padding: 10px;
+            text-align:center;
+        }
+        .skills,
+        .projects{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 200px;
+            background: #eaf6ff;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+            transition: 04s;
+        }
+        .card:hover{
+            background: #0077b6;
+            color: white;
+            transform: translateY(-10px);
+        }
+        
+        
+    </style>
+    <body>
+        <header>
+            <img src="beg2.jpeg">
+            <h1>Aman Patel</h1>
+            <p>Web Developer | Student</p>
+
+            <nav>
+                <a href="#">About</a>
+                <a href="#">Education</a>
+                <a href="#">Skills</a>
+                <a href="#">Projects</a>
+                <a href="#">Contacts</a>
+            </nav>
+        </header>
+        <section id="About">
+            <h3>About Me</h3>
+            <p>Hello Iam a passionate student who enjoys earnings web development and creating attractive website using HTML and CSS</p>
+            <br>
+        </section>
+        <section id="Education">
+            <h3>Education</h3>
+            
+            <table border="2">
+                <tr>
+                <td>Qualification</td>
+                <td>Institute</td>
+                <td>Year</td>
+                <td>Percentage</td>
+                </tr>
+
+                <tr>
+                <td>B.Sc. Computer Science</td>
+                <td>ABC College</td>
+                <td>2026</td>
+                <td>85%</td>
+                </tr>
+
+                <tr>
+                <td>HSC</td>
+                <td>XYZ College</td>
+                <td>2023</td>
+                <td>82%</td>
+                </tr>
+
+                <tr>
+                <td>SSC</td>
+                <td>PQR College</td>
+                <td>2021</td>
+                <td>90%</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="Skills">
+        <h3>Skills</h3>
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JAVA</div>
+            <div class="card">PYTHON</div>
+            <br>
+            </section>
+
+        <section id="Projects">
+    <h3>Projects</h3>
+    <div class="card">
+        
+    <h2>profile Website </h2>
+    <p>Personal created using HTML and CSS </p>
+    </div>
+    <div class = "card">
+        <h3>Restaurant Website</h3>
+        <p>Simple restaurant landing page</p>
+    </div>
+    <div class ="card">
+        <h3>Product page</h3>
+        <p>Responsive product showcase webpage.</p>
+    </div>
+</div>
+</section>
+<section id="Contacts">
+    <h3>Contact us</h3>
+         <tr>
+            <td>Enter your Name: </td>
+             <td><input type="text"></td>
+        </tr><br>
+        
+            <tr>
+            <td>Enter your email: </td>
+             <td ><input type="email"></td>
+        </tr><br>
+</section>
+    </body>
+</html>
